@@ -14,5 +14,7 @@ match operator:
             print("Cannot divide by zero.")
         else:     
             result = num1 / num2
+    case _:
+        print("Invalid operator.")
 if result:
     print(f"The result is {result}")
