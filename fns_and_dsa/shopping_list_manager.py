@@ -9,21 +9,21 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
-        if choice == '1':
+        if choice == 1:
             item = input("What item do you want to add?")
             shopping_list.append(item)
-        elif choice == '2':
+        elif choice == 2:
             if shopping_list:
                 item = input("What item do you want to remove?")
                 shopping_list.remove(item)
             else:
                 print("There is no item in shopping list!")
-        elif choice == '3':
+        elif choice == 3:
             print("Your shopping lists:")
             for shopping_item in shopping_list:print(shopping_item)
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
